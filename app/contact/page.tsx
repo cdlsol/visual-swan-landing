@@ -11,7 +11,7 @@ const team = [
 		role: "Founder & Data Engineer",
 		education: "Universidad Anahuac Mexico",
 		image: "/carlos-lopez.jpg",
-		linkedin: "https://linkedin.com/in/carlos-lopez",
+		linkedin: "www.linkedin.com/in/carlos-daniel-lopez-sol-73aabb259",
 	},
 	{
 		name: "Emiliano Hernandez",
@@ -46,21 +46,7 @@ export default function Contact() {
 					{/* Visual Swan Logo */}
 					<div className="flex justify-center mb-8">
 						<div className="relative w-32 h-32">
-							<Image
-								src="/visual-swan-logo.png"
-								alt="Visual Swan Logo"
-								fill
-								className="object-contain"
-								onError={(e) => {
-									// Fallback to text if image fails to load
-									e.currentTarget.style.display = 'none';
-									const sibling = e.currentTarget.nextElementSibling as HTMLElement;
-									if (sibling) {
-										sibling.style.display = 'flex';
-									}
-								}}
-							/>
-							<div className="hidden items-center justify-center w-full h-full text-2xl font-bold text-zinc-200 bg-zinc-800 rounded-lg">
+							<div className="flex items-center justify-center w-full h-full text-4xl font-bold text-zinc-200 bg-zinc-800 rounded-lg border border-zinc-700">
 								VS
 							</div>
 						</div>
