@@ -1,5 +1,5 @@
 "use client";
-import { Github, Mail, Twitter, Linkedin, User } from "lucide-react";
+import { Mail, Linkedin, User } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { Navigation } from "../components/nav";
@@ -12,7 +12,6 @@ const team = [
 		education: "Universidad Anahuac Mexico",
 		image: "/carlos-lopez.jpg",
 		linkedin: "https://linkedin.com/in/carlos-lopez",
-		github: "https://github.com/carlos-lopez",
 	},
 	{
 		name: "Emiliano Hernandez",
@@ -20,7 +19,6 @@ const team = [
 		education: "Tec de Monterrey",
 		image: "/emiliano-hernandez.jpg",
 		linkedin: "https://linkedin.com/in/emiliano-hernandez",
-		github: "https://github.com/emiliano-hernandez",
 	},
 ];
 
@@ -32,16 +30,10 @@ const socials = [
 		handle: "visualsw4n@gmail.com",
 	},
 	{
-		icon: <Twitter size={20} />,
-		href: "https://twitter.com/visualswan",
-		label: "Twitter",
-		handle: "@visualswan",
-	},
-	{
-		icon: <Github size={20} />,
-		href: "https://github.com/visualswan",
-		label: "Github",
-		handle: "visualswan",
+		icon: <Linkedin size={20} />,
+		href: "https://linkedin.com/company/visual-swan",
+		label: "LinkedIn",
+		handle: "Visual Swan",
 	},
 ];
 
@@ -62,7 +54,7 @@ export default function Contact() {
 								onError={(e) => {
 									// Fallback to text if image fails to load
 									e.currentTarget.style.display = 'none';
-									const sibling = e.currentTarget.nextElementSibling;
+									const sibling = e.currentTarget.nextElementSibling as HTMLElement;
 									if (sibling) {
 										sibling.style.display = 'flex';
 									}
@@ -98,7 +90,7 @@ export default function Contact() {
 											onError={(e) => {
 												// Fallback to user icon if image fails to load
 												e.currentTarget.style.display = 'none';
-												const sibling = e.currentTarget.nextElementSibling;
+												const sibling = e.currentTarget.nextElementSibling as HTMLElement;
 												if (sibling) {
 													sibling.style.display = 'flex';
 												}
@@ -126,13 +118,6 @@ export default function Contact() {
 											>
 												<Linkedin size={16} />
 											</Link>
-											<Link
-												href={member.github}
-												target="_blank"
-												className="text-zinc-400 hover:text-zinc-200"
-											>
-												<Github size={16} />
-											</Link>
 										</div>
 									</div>
 								</div>
@@ -141,7 +126,7 @@ export default function Contact() {
 					</div>
 
 					{/* Contact Section */}
-					<div className="grid w-full grid-cols-1 gap-8 mx-auto sm:mt-0 sm:grid-cols-3 lg:gap-16">
+					<div className="grid w-full grid-cols-1 gap-8 mx-auto sm:mt-0 sm:grid-cols-2 lg:gap-16">
 						{socials.map((s) => (
 							<Card key={s.label}>
 								<Link
