@@ -11,14 +11,14 @@ const team = [
 		role: "Co-Founder & Data Engineer",
 		education: "Universidad Anahuac México",
 		image: "/foto de perfil formal cdls.JPG",
-		linkedin: "www.linkedin.com/in/carlos-daniel-lopez-sol-73aabb259",
+		linkedin: "https://www.linkedin.com/in/carlos-daniel-lopez-sol-73aabb259",
 	},
 	{
 		name: "Emiliano Hernández",
 		role: "Co-Founder & Mechatronic Engineer",
 		education: "Tec de Monterrey",
 		image: "/emiliano hernandez.png",
-		linkedin: "www.linkedin.com/in/emiliano-hernández-vizcarra-0612652a0",
+		linkedin: "https://www.linkedin.com/in/emiliano-hernández-vizcarra-0612652a0",
 	},
 ];
 
