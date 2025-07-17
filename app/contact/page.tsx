@@ -44,7 +44,7 @@ export default function Contact() {
 			<div className="container flex items-center justify-center min-h-screen px-4 mx-auto">
 				<div className="grid w-full grid-cols-1 gap-8 mx-auto mt-48 sm:mt-0 lg:gap-16">
 					{/* Visual Swan Logo */}
-					<div className="flex justify-center mb-8">
+					<div className="flex justify-center mb-8 mt-32 sm:mt-40">
 						<div className="text-center">
 							<span className="text-5xl font-bold text-zinc-100">Visual Swan</span>
 						</div>
