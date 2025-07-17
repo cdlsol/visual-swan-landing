@@ -1,5 +1,5 @@
 "use client";
-import { ArrowLeft, Eye, Github, Twitter } from "lucide-react";
+import { ArrowLeft, Eye } from "lucide-react";
 import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
 
@@ -53,15 +53,6 @@ export const Header: React.FC<Props> = ({ project, views }) => {
 				}`}
 			>
 				<div className="container flex flex-row-reverse items-center justify-between p-6 mx-auto">
-					<div className="flex items-center gap-4">
-						<Link target="_blank" href="https://twitter.com/visualswan">
-							<Twitter className="w-5 h-5" />
-						</Link>
-						<Link target="_blank" href="https://github.com/visualswan">
-							<Github className="w-5 h-5" />
-						</Link>
-					</div>
-
 					<Link
 						href="/projects"
 						className={`duration-200 hover:font-medium ${

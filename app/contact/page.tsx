@@ -45,9 +45,12 @@ export default function Contact() {
 				<div className="grid w-full grid-cols-1 gap-8 mx-auto mt-32 sm:mt-0 lg:gap-16">
 					{/* Visual Swan Logo */}
 					<div className="flex justify-center mb-8">
-						<div className="relative w-32 h-32">
-							<div className="flex items-center justify-center w-full h-full text-4xl font-bold text-zinc-200 bg-zinc-800 rounded-lg border border-zinc-700">
-								VS
+						<div className="text-center">
+							<div className="text-6xl font-bold text-zinc-100 mb-4">
+								Visual Swan
+							</div>
+							<div className="text-zinc-400 text-lg">
+								Soluciones Integrales
 							</div>
 						</div>
 					</div>
