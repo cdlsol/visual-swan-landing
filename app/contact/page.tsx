@@ -7,18 +7,18 @@ import { Card } from "../components/card";
 
 const team = [
 	{
-		name: "Carlos Lopez",
+		name: "Carlos López",
 		role: "Co-Founder & Data Engineer",
-		education: "Universidad Anahuac Mexico",
+		education: "Universidad Anahuac México",
 		image: "/foto de perfil formal cdls.JPG",
 		linkedin: "www.linkedin.com/in/carlos-daniel-lopez-sol-73aabb259",
 	},
 	{
-		name: "Emiliano Hernandez",
+		name: "Emiliano Hernández",
 		role: "Co-Founder & Mechatronic Engineer",
 		education: "Tec de Monterrey",
-		image: "/emiliano-hernandez.jpg",
-		linkedin: "https://linkedin.com/in/emiliano-hernandez",
+		image: "/emiliano hernandez.png",
+		linkedin: "www.linkedin.com/in/emiliano-hernández-vizcarra-0612652a0",
 	},
 ];
 
@@ -143,7 +143,7 @@ export default function Contact() {
 			{/* Footer */}
 			<div className="container mx-auto px-4 py-8">
 				<div className="text-center text-zinc-400 text-sm">
-					© 2024 Visual Swan. Todos los derechos reservados.
+					© 2025 Visual Swan. Todos los derechos reservados.
 				</div>
 			</div>
 		</div>
