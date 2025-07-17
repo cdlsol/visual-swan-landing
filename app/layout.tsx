@@ -6,24 +6,24 @@ import { Analytics } from "./components/analytics";
 
 export const metadata: Metadata = {
   title: {
-    default: "chronark.com",
-    template: "%s | chronark.com",
+    default: "Visual Swan",
+    template: "%s | Visual Swan",
   },
-  description: "Co-founder of unkey.dev and founder of planetfall.io",
+  description: "Soluciones integrales para industria, almacén, comercio y marketing digital",
   openGraph: {
-    title: "chronark.com",
+    title: "Visual Swan",
     description:
-      "Co-founder of unkey.dev and founder of planetfall.io",
-    url: "https://chronark.com",
-    siteName: "chronark.com",
+      "Soluciones integrales para industria, almacén, comercio y marketing digital",
+    url: "https://visualswan.com",
+    siteName: "Visual Swan",
     images: [
       {
-        url: "https://chronark.com/og.png",
+        url: "https://visualswan.com/og.png",
         width: 1920,
         height: 1080,
       },
     ],
-    locale: "en-US",
+    locale: "es-ES",
     type: "website",
   },
   robots: {
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     },
   },
   twitter: {
-    title: "Chronark",
+    title: "Visual Swan",
     card: "summary_large_image",
   },
   icons: {
