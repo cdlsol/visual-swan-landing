@@ -62,7 +62,10 @@ export default function Contact() {
 								onError={(e) => {
 									// Fallback to text if image fails to load
 									e.currentTarget.style.display = 'none';
-									e.currentTarget.nextElementSibling.style.display = 'flex';
+									const sibling = e.currentTarget.nextElementSibling;
+									if (sibling) {
+										sibling.style.display = 'flex';
+									}
 								}}
 							/>
 							<div className="hidden items-center justify-center w-full h-full text-2xl font-bold text-zinc-200 bg-zinc-800 rounded-lg">
@@ -95,7 +98,10 @@ export default function Contact() {
 											onError={(e) => {
 												// Fallback to user icon if image fails to load
 												e.currentTarget.style.display = 'none';
-												e.currentTarget.nextElementSibling.style.display = 'flex';
+												const sibling = e.currentTarget.nextElementSibling;
+												if (sibling) {
+													sibling.style.display = 'flex';
+												}
 											}}
 										/>
 										<div className="hidden items-center justify-center w-full h-full">
