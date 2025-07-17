@@ -10,7 +10,7 @@ const team = [
 		name: "Carlos Lopez",
 		role: "Co-Founder & Data Engineer",
 		education: "Universidad Anahuac Mexico",
-		image: "/carlos-lopez.jpg",
+		image: "/foto de perfil formal cdls.JPG",
 		linkedin: "www.linkedin.com/in/carlos-daniel-lopez-sol-73aabb259",
 	},
 	{
