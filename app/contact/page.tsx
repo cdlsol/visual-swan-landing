@@ -17,7 +17,7 @@ const team = [
 		name: "Emiliano Hernández",
 		role: "Co-Founder & Mechatronic Engineer",
 		education: "Tec de Monterrey",
-		image: "/emiliano hernandez.png",
+		image: "/foto perfil emiliano.jpeg",
 		linkedin: "https://www.linkedin.com/in/emiliano-hernández-vizcarra-0612652a0",
 	},
 ];
