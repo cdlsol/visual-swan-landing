@@ -63,6 +63,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={[inter.variable, calSans.variable].join(" ")}>
       <head>
+        <link rel="icon" href="/favicon.png" type="public/vs_favicon.png" />
         <Analytics />
       </head>
       <body
