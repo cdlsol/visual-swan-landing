@@ -8,14 +8,14 @@ import { Card } from "../components/card";
 const team = [
 	{
 		name: "Carlos Lopez",
-		role: "Founder & Data Engineer",
+		role: "Co-Founder & Data Engineer",
 		education: "Universidad Anahuac Mexico",
 		image: "/carlos-lopez.jpg",
 		linkedin: "www.linkedin.com/in/carlos-daniel-lopez-sol-73aabb259",
 	},
 	{
 		name: "Emiliano Hernandez",
-		role: "Founder & Mechatronical Engineer",
+		role: "Co-Founder & Mechatronic Engineer",
 		education: "Tec de Monterrey",
 		image: "/emiliano-hernandez.jpg",
 		linkedin: "https://linkedin.com/in/emiliano-hernandez",
@@ -51,18 +51,8 @@ export default function Contact() {
 								alt="Visual Swan Logo"
 								fill
 								className="object-contain"
-								onError={(e) => {
-									// Fallback to text if image fails to load
-									e.currentTarget.style.display = 'none';
-									const sibling = e.currentTarget.nextElementSibling as HTMLElement;
-									if (sibling) {
-										sibling.style.display = 'flex';
-									}
-								}}
+								priority
 							/>
-							<div className="hidden items-center justify-center w-full h-full text-4xl font-bold text-zinc-200 bg-zinc-800 rounded-lg">
-								Visual Swan
-							</div>
 						</div>
 					</div>
 
