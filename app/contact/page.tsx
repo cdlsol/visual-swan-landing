@@ -45,12 +45,23 @@ export default function Contact() {
 				<div className="grid w-full grid-cols-1 gap-8 mx-auto mt-32 sm:mt-0 lg:gap-16">
 					{/* Visual Swan Logo */}
 					<div className="flex justify-center mb-8">
-						<div className="text-center">
-							<div className="text-6xl font-bold text-zinc-100 mb-4">
+						<div className="relative w-48 h-32">
+							<Image
+								src="/visual_swan_logo.jpeg"
+								alt="Visual Swan Logo"
+								fill
+								className="object-contain"
+								onError={(e) => {
+									// Fallback to text if image fails to load
+									e.currentTarget.style.display = 'none';
+									const sibling = e.currentTarget.nextElementSibling as HTMLElement;
+									if (sibling) {
+										sibling.style.display = 'flex';
+									}
+								}}
+							/>
+							<div className="hidden items-center justify-center w-full h-full text-4xl font-bold text-zinc-200 bg-zinc-800 rounded-lg">
 								Visual Swan
-							</div>
-							<div className="text-zinc-400 text-lg">
-								Soluciones Integrales
 							</div>
 						</div>
 					</div>
@@ -142,6 +153,13 @@ export default function Contact() {
 							</Card>
 						))}
 					</div>
+				</div>
+			</div>
+			
+			{/* Footer */}
+			<div className="container mx-auto px-4 py-8">
+				<div className="text-center text-zinc-400 text-sm">
+					© 2024 Visual Swan. Todos los derechos reservados.
 				</div>
 			</div>
 		</div>

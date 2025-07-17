@@ -52,7 +52,7 @@ export const Header: React.FC<Props> = ({ project, views }) => {
 						: "bg-white/10  border-zinc-200 lg:border-transparent"
 				}`}
 			>
-				<div className="container flex flex-row-reverse items-center justify-between p-6 mx-auto">
+				<div className="container flex items-center justify-between p-6 mx-auto">
 					<Link
 						href="/projects"
 						className={`duration-200 hover:font-medium ${
