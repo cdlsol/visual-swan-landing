@@ -11,11 +11,9 @@ const redis = Redis.fromEnv();
 
 export const revalidate = 60;
 export default async function ProjectsPage() {
-  const views = (
-    await redis.mget<number>(
-      ...allProjects.map((p: Project) => ["pageviews", "projects", p.slug].join(":")),
-    )
-  ).reduce((acc: Record<string, number>, v: number | null, i: number) => {
+  const keys = allProjects.map((p: Project) => ["pageviews", "projects", p.slug].join(":"));
+  const results = (await redis.mget(...keys)) as (number | null)[];
+  const views = results.reduce((acc: Record<string, number>, v: number | null, i: number) => {
     acc[allProjects[i].slug] = v ?? 0;
     return acc;
   }, {} as Record<string, number>);
