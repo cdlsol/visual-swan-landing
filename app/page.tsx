@@ -33,6 +33,9 @@ export default function Home() {
       </h1>
 
       <div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
+      <div className="z-10 mt-8 animate-fade-in">
+        <img src="/visual_swan_logo.jpeg" alt="Visual Swan logo" className="mx-auto h-24 w-auto md:h-32" />
+      </div>
       <div className="my-16 text-center animate-fade-in">
         <h2 className="text-sm text-zinc-500 ">
           Consultoría en Datos y análisis de consumo eléctrico vía KNX
