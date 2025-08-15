@@ -38,7 +38,7 @@ export default async function ProjectsPage() {
         <div className="grid grid-cols-1 gap-8 mx-auto lg:grid-cols-2 ">
           <Card>
             <Link href={`/projects/${featured.slug}`}>
-              <article className="relative w-full h-full p-4 md:p-8">
+              <article className="relative w-full h-full p-4 md:p-8 pb-20 md:pb-24">
                 <h2
                   id="featured-post"
                   className="mt-4 text-3xl font-bold text-zinc-100 group-hover:text-white sm:text-4xl font-display"
@@ -58,11 +58,23 @@ export default async function ProjectsPage() {
           </Card>
 
           <div className="flex flex-col w-full gap-8 mx-auto border-t border-gray-900/10 lg:mx-0 lg:border-t-0 ">
-            {[second].map((project: Project) => (
-              <Card key={project.slug}>
-                <Article project={project} views={views[project.slug] ?? 0} />
-              </Card>
-            ))}
+            <Card>
+	            <Link href={`/projects/${second.slug}`}>
+	              <article className="relative w-full h-full p-4 md:p-8">
+	                <h2 className="mt-4 text-2xl font-bold text-zinc-100 group-hover:text-white sm:text-3xl font-display">
+	                  {second.title}
+	                </h2>
+	                <p className="mt-4 leading-8 duration-150 text-zinc-400 group-hover:text-zinc-300">
+	                  {second.description}
+	                </p>
+	                <div className="mt-6">
+	                  <p className="text-zinc-200 hover:text-zinc-50">
+	                    Leer más <span aria-hidden="true">&rarr;</span>
+	                  </p>
+	                </div>
+	              </article>
+	            </Link>
+	          </Card>
           </div>
         </div>
       </div>
