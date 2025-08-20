@@ -38,7 +38,7 @@ export default function Home() {
       </div>
       <div className="my-16 text-center animate-fade-in">
         <h2 className="text-sm text-zinc-500 ">
-          Consultoría en Datos y análisis de consumo eléctrico vía KNX
+          Productos y Proyectos en Data, Eficiencia de Procesos e Implementación de Herramientas Administrativas
         </h2>
       </div>
     </div>

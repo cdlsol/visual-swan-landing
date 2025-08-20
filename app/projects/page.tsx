@@ -20,6 +20,7 @@ export default async function ProjectsPage() {
 
   const featured = allProjects.find((project: Project) => project.slug === "consultoria-en-datos")!;
   const second = allProjects.find((project: Project) => project.slug === "analisis-consumo-electrico-knx")!;
+  const third = allProjects.find((project: Project) => project.slug === "processwan")!;
 
   return (
     <div className="relative pb-16">
@@ -66,6 +67,23 @@ export default async function ProjectsPage() {
 	                </h2>
 	                <p className="mt-4 leading-8 duration-150 text-zinc-400 group-hover:text-zinc-300">
 	                  {second.description}
+	                </p>
+	                <div className="mt-6">
+	                  <p className="text-zinc-200 hover:text-zinc-50">
+	                    Leer más <span aria-hidden="true">&rarr;</span>
+	                  </p>
+	                </div>
+	              </article>
+	            </Link>
+	          </Card>
+	          <Card>
+	            <Link href={`/projects/${third.slug}`}>
+	              <article className="relative w-full h-full p-4 md:p-8">
+	                <h2 className="mt-4 text-2xl font-bold text-zinc-100 group-hover:text-white sm:text-3xl font-display">
+	                  {third.title}
+	                </h2>
+	                <p className="mt-4 leading-8 duration-150 text-zinc-400 group-hover:text-zinc-300">
+	                  {third.description}
 	                </p>
 	                <div className="mt-6">
 	                  <p className="text-zinc-200 hover:text-zinc-50">
