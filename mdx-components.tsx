@@ -12,6 +12,17 @@ export function useMDXComponents(components: any): any {
 		h2: ({ children }: PropsWithChildren) => (
 			<h2 className="text-zinc-50">{children}</h2>
 		),
+
+		// Simple playable video
+		video: (props: any) => (
+		<video
+			controls
+			preload="metadata"
+			className="rounded-lg max-w-full mx-auto"
+			{...props}
+		/>
+		),
+		
 		...components,
 	};
 }
